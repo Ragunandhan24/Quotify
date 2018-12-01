@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Quotify - List All</title>
+    <style>
+        thead {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e27ab0+0,638db7+50,c52b7b+100 */
+            background: #e27ab0; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #e27ab0 0%, #638db7 50%, #c52b7b 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #e27ab0 0%,#638db7 50%,#c52b7b 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #e27ab0 0%,#638db7 50%,#c52b7b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e27ab0', endColorstr='#c52b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 27px;
+
+        }
+        td {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        td span {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        
+        .iconclass {
+            float:right; 
+            cursor:pointer 
+        }
+        .material-icons.md-18 { font-size: 18px; }
+        .material-icons.md-30:hover {
+            color: red;
+        }
+        
+        .material-icons.md-30 { font-size: 30px; }
+        .material-icons.md-36 { font-size: 36px; }
+        .material-icons.md-48 { font-size: 48px; }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-image:url("grad.jpg"); 
+            color: white;
+            font-family: 'Spicy Rice', cursive;
+        }
+        img {
+            height: 60px;
+            width: 5%;
+        }
+        .scrollable {
+            height: 500px;
+            overflow: scroll;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center"><img src="quotelogo1.jpg"> Quotify</h1>
+    
+    
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="./index.html">Random Quote API</a></li>
+                <li class="page-item"><a class="page-link" href="./localQuote.html">Local Quotes</a></li>
+                <li class="page-item"><a class="page-link" href="./addQuote.html">Add Quote</a></li>
+                <li class="page-item active"><a class="page-link" href="#">List All Quotes</a></li>
+                
+            </ul>
+        </nav>
+
+
+
+    
+    <!-- <a href="./index.html" >Random Quote API</a>  |
+    <a href="./localQuote.html">Local Quote</a> |
+    <a href="./addQuote.html">Add Quote</a> |
+    <a href="#" style="background-color:yellow" >List All Quotes</a>
+    <br> <br> -->
+        <div class="container">
+            <div class="scrollable">
+                <table border="1" id="table" class="table table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th style="color:whitesmoke">Quotes - <span id="quoteCount"></span></th>
+                            
+                        </tr>
+
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./listAll.js"></script>
+</body>
+</html>

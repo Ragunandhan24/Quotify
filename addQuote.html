@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    
+    <title>Quotify - Add Quote</title>
+    <style>
+        h1 {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-image:url("grad.jpg"); 
+            color: white;
+            font-family: 'Spicy Rice', cursive;
+        }
+        img {
+            height: 60px;
+            width: 5%;
+        }
+    </style>
+    
+</head>
+<body>
+
+        <h1 style="text-align:center"><img src="quotelogo1.jpg"> Quotify</h1>
+    <div class="container">
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="./index.html">Random Quote API</a></li>
+                <li class="page-item"><a class="page-link" href="./localQuote.html">Local Quotes</a></li>
+                <li class="page-item active"><a class="page-link" href="#">Add Quote</a></li>
+                <li class="page-item"><a class="page-link" href="./listAll.html">List All Quotes</a></li>
+                
+            </ul>
+        </nav>
+        <!-- <a href="./index.html">Random Quote API</a>  |
+        <a href="./localQuote.html">Local Quote</a> |
+        <a href="#" style="background-color:yellow">Add Quote</a> |
+        <a href="./listAll.html">List All Quotes</a> -->
+    
+        <div>
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="quote">Quote</label>
+                    <textarea class="form-control" id="quote" rows="3" placeholder="Enter a quote"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" id="author"  placeholder="Enter Author Name">
+                    
+                </div>
+                <input type="submit" class="btn btn-primary" value="Save"/>
+                
+            </form>
+        </div>
+        
+    
+        
+       
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./addQuote.js"></script>
+    
+</body>
+</html>

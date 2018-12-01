@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <title>test</title>
+    <style>
+        button {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <button id= "btn" onclick="removeButton()">Click to Remove</button>
+
+        <table border="1">
+            <thead>
+                <tr>
+                <th> <span>Hello</span> Quote</th>
+                <th> <span>Hello</span> Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>This is 1st quote</td>
+                    <td><button onclick="removeElement(1)">Remove</button></td>
+                </tr>
+                <div></div>
+                <tr id="2">
+                        <td>This is 2nd quote</td>
+                        <td><button onclick="removeElement(2)">Remove</button></td>
+                    </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <input type="text" name="name" value="hello">
+    <button id="editButton" onclick="myfunction(event)">Edit</button>
+    <div id="div"></div>
+    <form id="myForm">    
+            <div class="form-group">
+            <label or="quote">Quote</label>
+            <textarea class="form-control" id="quote" rows="3" placeholder="Enter a quote">"${quote.quote}~${quote.author}"</textarea>
+            </div>
+            <button onclick="updateQuote(${i})">Ok</button>
+            </form>
+            <i class="material-icons md-18">face</i>
+    
+    <script>
+        let editButton=document.getElementById('editButton');
+        let span=document.querySelectorAll('th span');
+        
+        console.log(span);
+        let tr=document.getElementById(1);
+        console.log(tr.nextSibling)
+        function myfunction() {
+            event.stopPropagation();
+            let div=document.getElementById('div');
+            div.innerHTML='Hello';
+            if(div.style.display==="none"){
+            div.style.display="block";
+            } else {
+                div.style.display="none";
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+bharani
+mesham
+simmam
+
+nangai
+26
+
+27 - govt
+
+29 30 - mrg
+
